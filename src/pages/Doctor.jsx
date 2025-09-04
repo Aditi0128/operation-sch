@@ -19,7 +19,7 @@ export default function Doctor() {
         </div>
 
         {/* Scheduler Card */}
-        <div className="bg-white/80 mb-6 backdrop-blur-md rounded-2xl shadow-2xl p-6 hover:scale-105 transform transition duration-300 hover:shadow-3xl border border-gray-100">
+        <div className="bg-white/80 mb-6 backdrop-blur-md rounded-2xl shadow-2xl p-6 border border-gray-100">
           <OTScheduler role="doctor" />
         </div>
       </div>
