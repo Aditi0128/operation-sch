@@ -102,7 +102,7 @@ export default function OTScheduler({ role = "receptionist" }) {
     <div className="scheduler-inner">
       <div className="flex justify-between items-center mb-3">
         <h3 className="text-lg font-semibold">OT Schedule</h3>
-        <h4 className="text-gray-50 font-semibold "> Please select the time block on the calender to schedule.</h4>
+        <h4 className="text-gray-500 font-semibold "> Please select the time block on the calender to schedule.</h4>
         {role !== "doctor" && (
           <button
             className="px-3 py-1 border rounded"
