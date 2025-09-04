@@ -1,0 +1,72 @@
+/* Container */
+.ot-scheduler {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+/* Heading */
+.ot-scheduler h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Table styling */
+.ot-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.ot-table th,
+.ot-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.ot-table th {
+  background-color: #f4f4f4;
+  text-align: left;
+}
+
+/* Buttons */
+.ot-btn {
+  padding: 6px 12px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.ot-btn-primary {
+  background-color: #4caf50;
+  color: white;
+}
+
+.ot-btn-danger {
+  background-color: #f44336;
+  color: white;
+}
+
+/* Form styling */
+.ot-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.ot-form input,
+.ot-form select {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.event-mine {
+  background-color: #3b82f6 !important; /* blue for my events */
+  color: white !important;
+  border-radius: 4px;
+}
+
+.event-others {
+  background-color: #9ca3af !important; /* gray for others */
+  color: white !important;
+  border-radius: 4px;
+}

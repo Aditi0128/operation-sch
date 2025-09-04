@@ -1,0 +1,17 @@
+.right {
+  text-align: right;
+}
+.remarks {
+  font-style: italic;
+  margin-top: 8px;
+}
+
+/* responsive */
+@media (max-width: 700px) {
+  .grid-2 {
+    grid-template-columns: 1fr;
+  }
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+}

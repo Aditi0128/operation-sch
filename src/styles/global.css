@@ -1,0 +1,149 @@
+/* =========================
+   Global Styles
+   ========================= */
+
+/* Reset & Base */
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  background-color: #f7f9fc;
+  color: #333;
+}
+
+/* Container Spacing */
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* =========================
+   Navbar
+   ========================= */
+.navbar {
+  background: linear-gradient(90deg, #1e40af, #3b82f6);
+  padding: 15px 30px;
+  color: white;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  transition: opacity 0.3s ease;
+}
+
+.navbar a:hover {
+  opacity: 0.8;
+}
+
+/* =========================
+   Dashboard Cards
+   ========================= */
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+}
+
+/* =========================
+   Calendar Styling
+   ========================= */
+.rbc-calendar {
+  background: white;
+  border-radius: 16px;
+  padding: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
+}
+
+/* Toolbar */
+.rbc-toolbar {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.rbc-btn-group button {
+  background-color: #e5e7eb;
+  border: none;
+  border-radius: 8px;
+  padding: 6px 12px;
+  margin-right: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.rbc-btn-group button:hover {
+  background-color: #d1d5db;
+}
+
+.rbc-btn-group button.rbc-active {
+  background-color: #3b82f6;
+  color: white;
+}
+
+.rbc-toolbar button:contains("Today") {
+  background-color: #ef4444;
+  color: white;
+}
+
+/* Date & Header Styling */
+.rbc-header {
+  background-color: #f3f4f6;
+  font-weight: 600;
+  padding: 6px 0;
+}
+
+.rbc-off-range-bg {
+  background-color: #f9fafb;
+}
+
+/* Event Styling */
+.rbc-event {
+  background-color: #3b82f6;
+  border-radius: 6px;
+  padding: 2px 4px;
+  color: white;
+  font-size: 0.85rem;
+}
+
+.rbc-today {
+  background-color: #fee2e2 !important;
+}
+
+/* =========================
+   Framer Motion Helpers
+   ========================= */
+.animate-fade {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
