@@ -20,6 +20,7 @@ export default function Doctor() {
 
         {/* Scheduler Card */}
         <div className="bg-white/80 mb-6 backdrop-blur-md rounded-2xl shadow-2xl p-6 border border-gray-100">
+          <h3> Please select the time block on the calender to schedule.</h3>
           <OTScheduler role="doctor" />
         </div>
       </div>
